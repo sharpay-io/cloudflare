@@ -1,11 +1,3 @@
-var INSTALL_OPTIONS =  {
-  "code": "it812",
-  "position": "right",
-  "color": "dark",
-  "counter": "no"
-};
-
-
 (function () {
 	var options = INSTALL_OPTIONS;
 	var code = (options.code || '').trim();
