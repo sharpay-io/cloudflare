@@ -1,0 +1,30 @@
+{
+  "name": "@sharpay-io/cloudflare",
+  "version": "1.0.0",
+  "description": "Cloudflare app for installation on you site Sharpay multishare button.",
+  "main": "app.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharpay-io/cloudflare.git"
+  },
+  "author": "Sharpay Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sharpay-io/cloudflare/issues"
+  },
+  "homepage": "https://github.com/sharpay-io/cloudflare#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "^9.0.2"
+  },
+  "standard": {
+    "globals": [
+      "INSTALL",
+      "INSTALL_OPTIONS",
+      "INSTALL_SCOPE",
+      "INSTALL_PRODUCT",
+      "INSTALL_ID"
+    ]
+  }
+}
