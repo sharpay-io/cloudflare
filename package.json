@@ -1,6 +1,6 @@
 {
   "name": "@sharpay-io/cloudflare",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Cloudflare app for installation on you site Sharpay multishare button.",
   "main": "app.js",
   "private": true,

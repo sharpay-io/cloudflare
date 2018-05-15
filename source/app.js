@@ -25,7 +25,7 @@
 
 		if( options.counter == 'separate' ) {
 		   vendorDiv.setAttribute('data-sharecount', 'true');
-		} else {
+		} else if( options.counter == 'all' ) {
 		  vendorDiv.setAttribute('data-sharecount', 'true');
 		  vendorDiv.setAttribute('data-sharecount-mode', 'site');
 		}
