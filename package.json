@@ -1,9 +1,9 @@
 {
   "name": "@sharpay-io/cloudflare",
-  "version": "1.0.3",
-  "description": "Cloudflare app for installation on you site Sharpay multishare button.",
+  "version": "1.0.4",
+  "description": "Multishare button with blockchain profit",
   "main": "app.js",
-  "private": true,
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sharpay-io/cloudflare.git"
