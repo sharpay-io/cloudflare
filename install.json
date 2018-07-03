@@ -14,11 +14,8 @@
             "title":"Enter site ID",
             "type":"string",
             "placeholder":"xxxxx",
+			"description": "To get site ID register your site <a href='https://app.sharpay.io' target='_blank'>here</a>.",              
             "default":""
-         },
-         "help-code":{
-            "type":"help",
-            "helpvalue":"To get site ID register your site <a href='https://app.sharpay.io' target='_blank'>here</a>."
          },
          "position":{
             "title":"Select floating button position at the bottom of the page.",
@@ -46,10 +43,11 @@
                "dark":"Dark"
             },
             "format":"radios",
-            "default":"dark"
+            "default":"light"
          },
          "counter":{
-            "title":"Share counter",
+            "title":"Share counter",			
+			"description":"Check if you want our button to show how many times your page was shared via Sharpay.",
             "type":"string",
             "enum":[
                "no",
@@ -63,10 +61,6 @@
             },
             "format":"radios",
             "default":"no"
-         },
-         "help-counter":{
-            "type":"help",
-            "helpvalue":"Check if you want our button to show how many times your page was shared via Sharpay."
          }
       }
    }

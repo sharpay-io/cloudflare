@@ -1,6 +1,6 @@
 {
   "name": "@sharpay-io/cloudflare",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Multishare button with blockchain profit",
   "main": "app.js",
   "license": "MIT",
