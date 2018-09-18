@@ -68,7 +68,12 @@
 	        },
 	        "format":"radios",
 	        "default":"no"
-	     }
+	     },
+			 "mini": {
+				 "title": "Mini widget",
+				 "description": "Makes a floating widget compact",
+				 "type": "boolean"
+			 }
 	  }
 	},
 
