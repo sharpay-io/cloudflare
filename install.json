@@ -1,95 +1,115 @@
 {
-	"$schema":"http://json.schemastore.org/install",
-		"resources": {
+	"$schema": "http://json.schemastore.org/install",
+	"resources": {
 		"head": [
-		  {
-		    "type": "script",
-		    "src": "./source/app.js"
-		  }
+			{
+				"type": "script",
+				"src": "./source/app.js"
+			}
 		]
 	},
-	"options":{
-	  "properties":{
+	"options": {
+		"properties": {
 			"account": {
-			  "title": "Sharpay Account",
-			  "type": "object",
-			  "format": "account",
-			  "services": ["sharpay"],
-			  "required": true
+				"title": "Sharpay Account",
+				"type": "object",
+				"format": "account",
+				"services": [
+					"sharpay"
+				],
+				"required": true
 			},
-	     "code":{
-	        "title":"Enter site ID",
-	        "type":"string",
-	        "placeholder":"xxxxx",
-					"description": "To get site ID register your site <a href='https://app.sharpay.io' target='_blank'>here</a>.",
-	        "default":""
-	     },
-	     "position":{
-	        "title":"Select floating button position at the bottom of the page.",
-	        "type":"string",
-	        "enum":[
-	           "left",
-	           "right"
-	        ],
-	        "enumNames":{
-	           "left":"Left",
-	           "right":"Right"
-	        },
-	        "format":"radios",
-	        "default":"right"
-	     },
-	     "color":{
-	        "title":"Select floating button style.",
-	        "type":"string",
-	        "enum":[
-	           "light",
-	           "dark"
-	        ],
-	        "enumNames":{
-	           "light":"Light",
-	           "dark":"Dark"
-	        },
-	        "format":"radios",
-	        "default":"light"
-	     },
-	     "counter":{
-	        "title":"Share counter",
-					"description":"Check if you want our button to show how many times your page was shared via Sharpay.",
-	        "type":"string",
-	        "enum":[
-	           "no",
-	           "separate",
-	           "all"
-	        ],
-	        "enumNames":{
-	           "no":"Disable",
-	           "separate":"Separate for every page",
-	           "all":"Common for all site"
-	        },
-	        "format":"radios",
-	        "default":"no"
-	     },
-			 "mini": {
-				 "title": "Mini widget",
-				 "description": "Makes a floating widget compact",
-				 "type": "boolean"
-			 }
-	  }
+			"code": {
+				"title": "Enter site ID",
+				"type": "string",
+				"placeholder": "xxxxx",
+				"description": "To get site ID register your site <a href='https://app.sharpay.io' target='_blank'>here</a>.",
+				"default": ""
+			},
+			"position": {
+				"title": "Select floating button position at the bottom of the page.",
+				"type": "string",
+				"enum": [
+					"left",
+					"right"
+				],
+				"enumNames": {
+					"left": "Left",
+					"right": "Right"
+				},
+				"format": "radios",
+				"default": "right"
+			},
+			"color": {
+				"title": "Select floating button style.",
+				"type": "string",
+				"enum": [
+					"light",
+					"dark"
+				],
+				"enumNames": {
+					"light": "Light",
+					"dark": "Dark"
+				},
+				"format": "radios",
+				"default": "light"
+			},
+			"counter": {
+				"title": "Share counter",
+				"description": "Check if you want our button to show how many times your page was shared via Sharpay.",
+				"type": "string",
+				"enum": [
+					"no",
+					"separate",
+					"all"
+				],
+				"enumNames": {
+					"no": "Disable",
+					"separate": "Separate for every page",
+					"all": "Common for all site"
+				},
+				"format": "radios",
+				"default": "no"
+			},
+			"mini": {
+				"title": "Mini widget",
+				"description": "Makes a floating widget compact",
+				"type": "string",
+				"enum": [
+					"no",
+					"mini",
+					"animate"
+				],
+				"enumNames": {
+					"no": "Full view",
+					"mini": "Compact view",
+					"animate": "Animated expanding"
+				},
+				"format": "radios",
+				"default": "no"
+			}
+		}
 	},
-
 	"hooks": [
 		{
 			"endpoint": "https://app.sharpay.io/cloudflare/hook",
-			"events": ["option-change:account", "item-add"],
+			"events": [
+				"option-change:account",
+				"item-add"
+			],
 			"block": true,
-			"authenticate": ["account"],
+			"authenticate": [
+				"account"
+			],
 			"failure": {
 				"action": "notify",
 				"message": "There was an error communicating with Sharpay."
 			}
 		},
 		{
-			"events": ["account-logout"],
+			"events": [
+				"account-logout"
+			],
 			"action": "reset-schema"
 		}
 	]
