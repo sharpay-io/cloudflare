@@ -40,6 +40,10 @@
 			vendorDiv.setAttribute('data-animate', 'true');
 		}
 
+		if ( options.image ) {
+			vendorDiv.setAttribute('data-image', options.image);
+		}
+
 		document.body.appendChild(vendorDiv);
 
 		var vendorScript = document.createElement('script');

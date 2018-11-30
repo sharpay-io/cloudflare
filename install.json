@@ -17,14 +17,16 @@
 				"services": [
 					"sharpay"
 				],
-				"required": true
+				"required": true,
+				"order": 1
 			},
 			"code": {
 				"title": "Enter site ID",
 				"type": "string",
 				"placeholder": "xxxxx",
 				"description": "To get site ID register your site <a href='https://app.sharpay.io' target='_blank'>here</a>.",
-				"default": ""
+				"default": "",
+				"order": 2
 			},
 			"position": {
 				"title": "Select floating button position at the bottom of the page.",
@@ -38,7 +40,8 @@
 					"right": "Right"
 				},
 				"format": "radios",
-				"default": "right"
+				"default": "right",
+				"order": 3
 			},
 			"color": {
 				"title": "Select floating button style.",
@@ -52,7 +55,8 @@
 					"dark": "Dark"
 				},
 				"format": "radios",
-				"default": "light"
+				"default": "light",
+				"order": 4
 			},
 			"counter": {
 				"title": "Share counter",
@@ -69,7 +73,8 @@
 					"all": "Common for all site"
 				},
 				"format": "radios",
-				"default": "no"
+				"default": "no",
+				"order": 5
 			},
 			"mini": {
 				"title": "Mini widget",
@@ -86,7 +91,15 @@
 					"animate": "Animated expanding"
 				},
 				"format": "radios",
-				"default": "no"
+				"default": "no",
+				"order": 6
+			},
+			"image": {
+				"title": "Enter class, id or URL of an image to make it selected by default in sharing window.",
+				"type": "string",
+				"placeholder": ".img | #img | http://...",
+				"default": "",
+				"order": 7
 			}
 		}
 	},
