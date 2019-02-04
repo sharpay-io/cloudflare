@@ -34,12 +34,6 @@
 			vendorDiv.setAttribute('data-sharecount-mode', 'site');
 		}
 
-		if ( options.mini == 'mini' ) {
-			vendorDiv.setAttribute('data-mini', 'true');
-		} else if ( options.mini == 'animate' ) {
-			vendorDiv.setAttribute('data-animate', 'true');
-		}
-
 		if ( options.image ) {
 			vendorDiv.setAttribute('data-image', options.image);
 		}

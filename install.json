@@ -76,24 +76,6 @@
 				"default": "no",
 				"order": 5
 			},
-			"mini": {
-				"title": "Mini widget",
-				"description": "Makes a floating widget compact",
-				"type": "string",
-				"enum": [
-					"no",
-					"mini",
-					"animate"
-				],
-				"enumNames": {
-					"no": "Full view",
-					"mini": "Compact view",
-					"animate": "Animated expanding"
-				},
-				"format": "radios",
-				"default": "no",
-				"order": 6
-			},
 			"image": {
 				"title": "Enter class, id or URL of an image to make it selected by default in sharing window.",
 				"type": "string",
