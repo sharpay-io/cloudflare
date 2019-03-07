@@ -1,6 +1,6 @@
 {
   "name": "@sharpay-io/cloudflare",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Multishare button with blockchain rewards",
   "main": "app.js",
   "license": "MIT",
@@ -9,7 +9,6 @@
     "url": "git+https://github.com/sharpay-io/cloudflare.git"
   },
   "author": "Sharpay Inc.",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sharpay-io/cloudflare/issues"
   },

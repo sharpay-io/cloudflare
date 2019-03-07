@@ -93,18 +93,24 @@
 				"item-add"
 			],
 			"block": true,
-			"authenticate": [
-				"account"
-			],
+			"authenticate": ["account"],
 			"failure": {
 				"action": "notify",
 				"message": "There was an error communicating with Sharpay."
 			}
 		},
 		{
-			"events": [
-				"account-logout"
-			],
+			"endpoint": "https://app.sharpay.io/cloudflare/addSite",
+			"events": ["item-add"],
+			"block": true,
+			"authenticate": ["account"],
+			"failure": {
+				"action": "notify",
+				"message": "There was an error communicating with Sharpay."
+			}
+		},
+		{
+			"events": ["account-logout"],
 			"action": "reset-schema"
 		}
 	]
