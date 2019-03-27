@@ -15,7 +15,7 @@
 				"type": "object",
 				"format": "account",
 				"services": [
-					"sharpay"
+					"sharpay2"
 				],
 				"required": true,
 				"order": 1
@@ -87,7 +87,7 @@
 	},
 	"hooks": [
 		{
-			"endpoint": "https://app.sharpay.io/cloudflare/hook",
+			"endpoint": "https://api.sharpay.io/cloudflare/hook",
 			"events": [
 				"option-change:account",
 				"item-add"
@@ -100,7 +100,7 @@
 			}
 		},
 		{
-			"endpoint": "https://app.sharpay.io/cloudflare/addSite",
+			"endpoint": "https://api.sharpay.io/cloudflare/sites/add",
 			"events": ["item-add"],
 			"block": true,
 			"authenticate": ["account"],
