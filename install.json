@@ -76,6 +76,13 @@
 				"default": "no",
 				"order": 5
 			},
+			"modal": {
+				"title": "Open in modal window",
+				"description": "The sharing window will open in modal mode without creating a new browser window.",
+				"type": "boolean",
+				"default": true,
+				"order": 6
+			},
 			"image": {
 				"title": "Enter class, id or URL of an image to make it selected by default in sharing window.",
 				"type": "string",
