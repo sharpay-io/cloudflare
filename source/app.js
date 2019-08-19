@@ -38,10 +38,6 @@
 			vendorDiv.setAttribute('data-image', options.image);
 		}
 		
-		if ( options.modal ) {
-			vendorDiv.setAttribute('data-modal', 'true');
-		}
-
 		document.body.appendChild(vendorDiv);
 
 		var vendorScript = document.createElement('script');
